@@ -160,8 +160,8 @@ svg {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  transition: color var(--transition-timing) var(--timing-function), fill var(--transition-timing) var(--timing-function);
-  
+  transition: color var(--transition-timing) var(--timing-function),
+    fill var(--transition-timing) var(--timing-function);
 }
 
 .contacts-link:hover,
@@ -520,7 +520,10 @@ svg {
   border-radius: 50%;
   background-color: var(--team-card-color);
   fill: var(--icon-color);
-  transition: color var(--transition-timing) var(--timing-function), background-color var(--transition-timing) var(--timing-function), fill var(--transition-timing) var(--timing-function), border var(--transition-timing) var(--timing-function);
+  transition: color var(--transition-timing) var(--timing-function),
+    background-color var(--transition-timing) var(--timing-function),
+    fill var(--transition-timing) var(--timing-function),
+    border var(--transition-timing) var(--timing-function);
 }
 
 .joinus-link:hover,
@@ -555,7 +558,8 @@ svg {
   align-items: center;
   justify-content: center;
   fill: var(--icon-color);
-  transition: fill var(--transition-timing) var(--timing-function), border var(--transition-timing) var(--timing-function);
+  transition: fill var(--transition-timing) var(--timing-function),
+    border var(--transition-timing) var(--timing-function);
 }
 
 .client-link:hover,
@@ -602,7 +606,8 @@ svg {
   height: 38px;
   gap: 8px;
   padding: 6px 22px;
-  transition: color var(--transition-timing) var(--timing-function), background-color var(--transition-timing) var(--timing-function);
+  transition: color var(--transition-timing) var(--timing-function),
+    background-color var(--transition-timing) var(--timing-function);
 }
 
 .button-filters:hover,
@@ -789,7 +794,9 @@ svg {
   border-radius: 50%;
   background-color: var(--icon-background-footer);
   fill: var(--button-text-color);
-  transition: background-color var(--transition-timing) var(--timing-function), border var(--transition-timing) var(--timing-function), fill var(--transition-timing) var(--timing-function);
+  transition: background-color var(--transition-timing) var(--timing-function),
+    border var(--transition-timing) var(--timing-function),
+    fill var(--transition-timing) var(--timing-function);
 }
 
 .joinus-link-footer:hover,
