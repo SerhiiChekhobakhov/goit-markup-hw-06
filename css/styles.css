@@ -709,7 +709,7 @@ svg {
 
 .footer > .container {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 /* Логотип у футері */
