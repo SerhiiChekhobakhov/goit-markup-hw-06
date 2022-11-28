@@ -22,6 +22,7 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-timing: 250ms;
   --backdrop-color: rgba(0, 0, 0, 0.2);
+  --placeholder-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -828,6 +829,10 @@ svg {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+
+.input::placeholder {
+  color: var(--placeholder-color);
 }
 
 .subscribe-footer {
