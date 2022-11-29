@@ -529,6 +529,49 @@
             <use href="./images/cross.svg#cross"></use>
           </svg>
         </button>
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form action="">
+          <label>
+            <p class="modal-form-title">Ім'я</p>
+            <input
+              type="text"
+              name="username"
+              placeholder=""
+              class="modal-form"
+            />
+          </label>
+          <label>
+            <p class="modal-form-title">Телефон</p>
+            <input
+              type="tel"
+              name="phone_number"
+              placeholder=""
+              class="modal-form"
+            />
+          </label>
+          <label>
+            <p class="modal-form-title">Пошта</p>
+            <input
+              type="email"
+              name="email"
+              placeholder=""
+              class="modal-form"
+            />
+          </label>
+          <label>
+            <p class="modal-form-title">Коментар</p>
+            <textarea
+              name="comment"
+              rows="7"
+              class="modal-form-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="modal-chekbox">
+            <input type="checkbox" name="agreement" value="Погоджуюся з розсилкою та приймаю Умови договору">
+            <p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link">Умови договору</a></p>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
