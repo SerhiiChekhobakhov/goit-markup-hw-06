@@ -310,6 +310,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: fill var(--transition-timing) var(--timing-function);
 }
 
 .modal-button-close:hover,
