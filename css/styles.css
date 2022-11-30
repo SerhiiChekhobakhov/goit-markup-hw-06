@@ -378,7 +378,6 @@ svg {
 }
 
 .modal-chekbox {
-  width: 425px;
   height: 24px;
   display: flex;
   margin: 0 0 30px;
@@ -390,6 +389,7 @@ svg {
   margin: 0 8.38px 0 12px;
   width: 16px;
   height: 15px;
+  border: var(--title-color);
   
 }
 
