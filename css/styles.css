@@ -1013,6 +1013,7 @@ svg {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  color: var(--background-color);
 
   transition: border-color var(--transition-timing) var(--timing-function);
 }
