@@ -250,7 +250,7 @@ svg {
   margin: 0 auto;
 }
 
-/* Модальне вікно і бекдроп */
+/* Бекдроп */
 
 .backdrop {
   position: fixed;
@@ -270,6 +270,8 @@ svg {
   pointer-events: none;
   visibility: hidden;
 }
+
+/* Модальне вікно */
 
 .modal {
   position: absolute;
@@ -356,6 +358,7 @@ svg {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color var(--transition-timing) var(--timing-function);
 }
 
 .modal-form:focus {
@@ -375,6 +378,7 @@ svg {
   fill: var(--title-color);
   width: 18px;
   height: 18px;
+  transition: fill var(--transition-timing) var(--timing-function);
 }
 
 .modal-form:focus + .modal-form-icon {
@@ -394,6 +398,7 @@ svg {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  transition: border-color var(--transition-timing) var(--timing-function);
 }
 
 .modal-form-comment:focus {
@@ -422,6 +427,25 @@ svg {
   width: 16px;
   height: 15px;
   border: var(--title-color);
+
+  appearance: none;
+  position: absolute;
+}
+
+.chekbox-icon {
+  margin-right: 7px;
+  margin-left: 13px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+.chekbox:checked + .chekbox-icon {
+  background-color: var(--background-color-button);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: content-box;
 }
 
 .checkbox-text {
@@ -985,6 +1009,13 @@ svg {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+
+  transition: border-color var(--transition-timing) var(--timing-function);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--background-color-button);
 }
 
 .input::placeholder {
