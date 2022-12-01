@@ -445,7 +445,8 @@ svg {
   background-color: var(--background-color-button);
   background-image: url(../images/icon-check.svg);
   background-size: contain;
-  background-origin: content-box;
+  background-origin: border-box;
+  border-color: var(--background-color-button);
 }
 
 .checkbox-text {
