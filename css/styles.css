@@ -358,19 +358,27 @@ svg {
   border-radius: 4px;
 }
 
+.modal-form:focus {
+  border-color: var(--background-color-button);
+  outline: none;
+}
+
 .form-field {
   position: relative;
-} 
-
-.modal-icon {
-  position: absolute;
-  top: 11px;
-  left: 12px;
 }
 
 .modal-form-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+
+  fill: var(--title-color);
   width: 18px;
   height: 18px;
+}
+
+.modal-form:focus + .modal-form-icon {
+  fill: var(--background-color-button);
 }
 
 .modal-form-comment {
@@ -388,7 +396,12 @@ svg {
   letter-spacing: 0.01em;
 }
 
-.modal-form-comment::placeholder{
+.modal-form-comment:focus {
+  border-color: var(--background-color-button);
+  outline: none;
+}
+
+.modal-form-comment::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -409,7 +422,6 @@ svg {
   width: 16px;
   height: 15px;
   border: var(--title-color);
-  
 }
 
 .checkbox-text {
@@ -446,11 +458,8 @@ svg {
   display: flex;
   align-items: center;
   text-align: center;
-  
-
 
   color: var(--background-color);
-
 }
 
 .modal-send-button:hover,
